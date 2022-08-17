@@ -50,8 +50,8 @@ function normal(id) {
     element.onclick = function() { big(element.id) };
 }
 window.addEventListener("scroll", function () {
-    var background = document.getElementsByClassName("background");
-    for (let x = 0; x < background.length; x++) {
-        background[x].style.transform = "translateY(" + window.scrollY * 0.5 + "px)";
-    }
+    document.querySelector(".background").style.transform = "translateY(" + window.scrollY * 0.9 + "px)";
+    document.querySelector(".america").style.transform = "translateY(" + window.scrollY * 0.3 + "px)";
+    document.querySelector(".thor").style.transform = "translateY(" + window.scrollY * 0.5 + "px)";
+    document.querySelector(".ironman").style.transform = "translateY(" + window.scrollY * 0.5 + "px)";    
 });
