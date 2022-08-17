@@ -6,7 +6,7 @@ function toggleTheme() {
         document.getElementById("header").style.color = "black";
         var content = document.getElementsByClassName("content");
         for (let i = 0; i < content.length; i++) {
-            content[i].style.background = "black";
+            content[i].style.background = "rgba(0, 0, 0, 0.5)";
         }
         theme = 1;
     } else {
@@ -15,7 +15,7 @@ function toggleTheme() {
         document.getElementById("header").style.color = "white";
         var content = document.getElementsByClassName("content");
         for (let i = 0; i < content.length; i++) {
-            content[i].style.background = "white";
+            content[i].style.background = "rgba(255, 255, 255, 0.5)";
         }
         theme = 0;
     }
