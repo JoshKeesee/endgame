@@ -28,7 +28,7 @@ function big(id) {
     var element = document.getElementById(id);
     element.style.position = "fixed";
     element.style.zIndex = "15";
-    if (theme = 1) {
+    if (theme === 1) {
         element.style.background = "black";
         element.style.color = "white";
     } else {
@@ -43,6 +43,7 @@ function big(id) {
 }
 function normal(id) {
     var element = document.getElementById(id);
+    element.style.zIndex = "1";
     element.style.position = "";
     element.onclick = function() { big(element.id) };
 }
