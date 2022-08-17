@@ -9,7 +9,10 @@
         <img src="avengers.png" width="65" class="fixed -m-6 -ml-5 -mt-4">
         Avengers - Endgame
     </div>
-    <img src="background.jpg" width="100%" class="background -z-10 relative rounded-2xl" >
+    <img src="background.jpg" width="100%" class="background -z-10 relative" >
+    <img src="america.png" width="50%" class="america inset-0 top-5 -z-10 absolute" >
+    <img src="ironman.png" width="50%" class="ironman inset-0 top-5 -z-10 absolute" >
+    <img src="thor.png" width="50%" class="thor inset-0 top-5 -z-10 absolute" >
     <div class="w-100 h-100 py-48 absolute inset-0 top-48 z-0 mt-48">
         <div id="container" class="bg-white p-6 grid grid-cols-3 border-t-4 border-blue-500">
             <a id="1" onclick="big(this.id)" class="select-none transition-all cursor-pointer content inline-block m-2 border-gray-400 border-2 rounded-xl p-6 shadow-black shadow-md min-h-xl">
@@ -77,9 +80,25 @@
         </div>
     </div>
     <style>
+        body {
+            overflow-x: hidden;
+        }
         .content {
             background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(5px);
+        }
+        .thor {
+            left: -2%;
+            top: 5%;
+        }
+        .ironman {
+            left: 55%;
+            top: 5%;
+        }
+        .america {
+            left: 25%;
+            top: 5%;
+            z-index: 0;
         }
     </style>
     <script src="script.js"></script>
