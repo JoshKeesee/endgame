@@ -39,12 +39,14 @@ function big(id) {
     element.style.bottom = "0";
     element.style.left = "0";
     element.style.right = "0";
+    element.style.fontSize = "30px";
     element.onclick = function() { normal(element.id) };
 }
 function normal(id) {
     var element = document.getElementById(id);
     element.style.zIndex = "1";
     element.style.position = "";
+    element.style.fontSize = "";
     element.onclick = function() { big(element.id) };
 }
 window.addEventListener("scroll", function () {
